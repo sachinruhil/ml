@@ -65,3 +65,51 @@ def which_prize(points):
 call = which_prize(185)
 print(call)
 
+
+#most difficult till now
+def convert_to_numeric(score):
+    converted_score = float(score)
+    return converted_score
+
+
+def sum_of_middle_three(score1, score2, score3, score4, score5):
+    max_score = max(score1, score2, score3, score4, score5)
+    min_score = min(score1, score2, score3, score4, score5)
+    sum = score1 + score2 + score3 + score4 + score5 - max_score - min_score
+    return sum
+
+
+def score_to_rating_string(av_score):
+    if av_score < 1:
+        rating = "Terrible"
+    elif av_score < 2:
+        rating = "Bad"
+    elif av_score < 3:
+        rating = "OK"
+    elif av_score < 4:
+        rating = "Good"
+    else:  # Using else at the end, every possible case gets caught
+        rating = "Excellent"
+    return rating
+
+
+def scores_to_rating(score1, score2, score3, score4, score5):
+    max_score = max(score1, score2, score3, score4, score5)
+    min_score = min(score1, score2, score3, score4, score5)
+    av_of_three_middle = (score1 + score2 + score3 + score4 + score5 - max_score - min_score) / 3
+    if av_of_three_middle < 1:
+        rating = "Terrible"
+    elif av_of_three_middle < 2:
+        rating = "Bad"
+    elif av_of_three_middle < 3:
+        rating = "OK"
+    elif av_of_three_middle < 4:
+        rating = "Good"
+    else:  # Using else at the end, every possible case gets caught
+        rating = "Excellent"
+        return av_of_three_middle
+
+
+call = scores_to_rating(1, 3, 5, 7, 9)
+print(call)
+
