@@ -45,3 +45,23 @@ def cylinder_surface_area(radius, height, has_top_and_bottom):
 call = cylinder_surface_area(2,4,True)
 print(call)
 
+
+# another if fuction with trurth
+def which_prize(points):
+    prize = None
+    if points <= 50:
+        prize = "a wooden rabbit"
+    elif 151 <= points <= 180:
+        prize = "a wafer-thin mint"
+    elif points >= 181:
+        prize = "a penguin"
+
+    if prize:
+        return "Congratulations! You have won " + prize + "!"
+    else:
+        return "Oh dear, no prize this time."
+
+
+call = which_prize(185)
+print(call)
+
