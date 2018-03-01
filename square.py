@@ -129,3 +129,12 @@ print(first_half)
 
 second_half = eclipse_dates[5:]
 print(second_half)
+
+#largest three from a list
+def top_three(input_list):
+    sorted_list = sorted(input_list,reverse = True)
+    answer = sorted_list[:3]
+    return answer
+call =top_three([2,3,4,5,6,7,8])
+print(call)
+
