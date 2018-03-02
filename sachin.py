@@ -48,3 +48,14 @@ print(elements['helium'])
 
 print(elements.get('unobtainium', 'There\'s no such element!'))
 print(elements['helium']['weight'])
+
+
+#tuples
+def hours2days(input_hours):
+    days = input_hours // 24
+    hours = input_hours % 24
+    return days, hours
+
+
+call = hours2days(100)
+print(call)
