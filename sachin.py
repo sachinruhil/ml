@@ -40,3 +40,11 @@ print(cargo_list)
 #dictionaries stores data in pairs
 elements = {'hydrogen':1, 'helium':2 , 'carbon':6}
 print(elements['carbon'])
+
+#dictionaries in dictonary
+elements = {'hydrogen': {'number': 1, 'weight': 1.00794, 'symbol': 'H'},
+            'helium': {'number': 2, 'weight': 4.002602, 'symbol': 'He'}}
+print(elements['helium'])
+
+print(elements.get('unobtainium', 'There\'s no such element!'))
+print(elements['helium']['weight'])
