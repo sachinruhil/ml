@@ -138,3 +138,12 @@ def top_three(input_list):
 call =top_three([2,3,4,5,6,7,8])
 print(call)
 
+#one more may to do upper
+def top_three(input_list):
+    return sorted(input_list, reverse=True)[:3]
+call =top_three([2,3,4,5,6,7,8])
+print(call)
+
+
+
+
