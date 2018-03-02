@@ -36,3 +36,7 @@ for cargo in manifest :
         cargo_weight += cargo[1]
 print(cargo_weight)
 print(cargo_list)
+
+#dictionaries stores data in pairs
+elements = {'hydrogen':1, 'helium':2 , 'carbon':6}
+print(elements['carbon'])
